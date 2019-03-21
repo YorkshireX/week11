@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">first</string>
+    <string name="str1">jyzacca</string>
+    <string name="str2" translatable="false">mt</string>
+    <string name="button1" translatable="false">in</string>
+    <string name="pic" translatable="false">taozi</string>
+</resources>
