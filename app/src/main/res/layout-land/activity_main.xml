@@ -13,9 +13,11 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_reset"
+        android:layout_marginBottom="-2dp"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -37,33 +39,43 @@
                 android:id="@+id/score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
                 android:gravity="center"
                 android:text="@string/score"
                 android:textSize="65sp" />
 
-            <Button
-                android:id="@+id/btn_3"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:onClick="btn_3"
-                android:text="@string/lable_add3" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btn_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:onClick="btn_2"
-                android:text="@string/lable_add2" />
+                <Button
+                    android:id="@+id/btn_3"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="btn_3"
+                    android:text="@string/lable_add3" />
 
-            <Button
-                android:id="@+id/btn_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="btn_1"
-                android:text="@string/lable_add1" />
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="btn_2"
+                    android:text="@string/lable_add2" />
+
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:onClick="btn_1"
+                    android:text="@string/lable_add1" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <TextView
@@ -93,35 +105,44 @@
                 android:id="@+id/scoreB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
                 android:gravity="center"
                 android:text="@string/score"
                 android:textSize="65sp" />
 
-            <Button
-                android:id="@+id/btn_3B"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:onClick="btn_3"
-                android:text="@string/lable_add3" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btn_2B"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:onClick="btn_2"
-                android:text="@string/lable_add2" />
+                <Button
+                    android:id="@+id/btn_3B"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="btn_3"
+                    android:text="@string/lable_add3" />
 
-            <Button
-                android:id="@+id/btn_1B"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="btn_1"
-                android:text="@string/lable_add1" />
+                <Button
+                    android:id="@+id/btn_2B"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="btn_2"
+                    android:text="@string/lable_add2" />
+
+                <Button
+                    android:id="@+id/btn_1B"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="btn_1"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/lable_add1" />
+
+            </LinearLayout>
+
         </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_reset"
@@ -129,7 +150,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="0dp"
         android:background="@android:color/holo_orange_light"
         android:onClick="btn_reset"
         android:text="@string/btn_reset_lable" />

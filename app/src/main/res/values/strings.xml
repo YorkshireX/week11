@@ -1,7 +1,18 @@
-<resources>
-    <string name="app_name">first</string>
-    <string name="str1">jyzacca</string>
-    <string name="str2" translatable="false">mt</string>
-    <string name="button1" translatable="false">in</string>
-    <string name="pic" translatable="false">taozi</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Hello</string>
+    <string name="teamName">TeamA</string>
+    <string name="score">0</string>
+    <string name="lable_add1">+1 POINT</string>
+    <string name="lable_add2">+2 POINTS</string>
+    <string name="lable_add3">+3 POINTS</string>
+    <string name="btn_reset_lable">RESET</string>
+    <string name="btn_dollar_lable">Dollar</string>
+    <string name="btn_euro_lable">Euro</string>
+    <string name="btn_won_lable">Won</string>
+    <string name="rmb_hint">Input RMB</string>
+    <string name="btn_opencfg_label">config</string>
+    <string name="btn_save_label">Save</string>
+    <string name="menu_set_label">Setting</string>
+    <string name="label_open_list">OpenList</string>
+
 </resources>
